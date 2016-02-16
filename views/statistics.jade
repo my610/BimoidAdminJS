@@ -1,0 +1,37 @@
+extends layout
+block content
+   .col-md-12
+      h3 #{title}
+      table(class='table table-striped table-hover table-condensed')
+         tr
+            td Версия сервера
+            td.text-right
+               span#tVersion -
+         tr
+            td База данных
+            td.text-right
+               span#tDbType -
+         tr
+            td Передача файлов
+            td.text-right
+               span#tFileTransfer -
+         tr
+            td Число зарегистрированных пользователей
+            td.text-right
+               span#tReg -
+         tr
+            td Число online пользователей
+            td.text-right
+               span#tOnline -
+         tr
+            td Доступные транспорты
+            td.text-right
+               span#tTranports -
+         tr
+            td Время работы основного Bimoid сервера
+            td.text-right
+               span#tUptimeBimoid -
+         tr
+            td Время работы файлового прокси сервера
+            td.text-right
+               span#tUptimeFt -

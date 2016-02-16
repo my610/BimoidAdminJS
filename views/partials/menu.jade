@@ -1,0 +1,12 @@
+- var curRoute = route
+
+mixin link(cls, href, name, routes)
+   a(class=cls class={active: curRoute === routes}, href=href)= name
+
+.blog-masthead
+   .container
+      nav.blog-nav
+         +link('blog-nav-item', '/', 'Home', '/index')
+         +link('blog-nav-item', '/stats', 'Statistics', '/stats')
+         +link('blog-nav-item', '/about', 'About', '/about')
+         +link('blog-nav-item pull-right', '/login', 'Login', '/login')
